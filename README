@@ -1,0 +1,2 @@
+An in-memory filesystem. Instead of reading and writing disk blocks, the RAMDISK filesystem will use main memory for storage.
+Currently inefficiently utilizes memory. To improve this, create a separate struct to hold only basic info without the data char buffer. For files, the char buffer can be linked later in a separate data structure.
